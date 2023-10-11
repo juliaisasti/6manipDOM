@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+:root {
+  --main-color: #6CACE4;
+  --hover-color: #FFB81C;
+  --body-color: #FFFFFF;
+  --box-color: #7D4016;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+  #nav-wrapper {
+    overflow: hidden;
+    top:0;
+    position: fixed;
+    font-size:medium;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 40px;
+
+    background-color: var(--main-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  body {
+    font-family: 'VT323', monospace;
+    background: var(--body-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+main {
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home_container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: auto;
+  padding: 30px;
+  margin: 45px;
+  background-color: var(--main-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.home_container_button {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'VT323', monospace;
+  font-size: x-large;
+  display: inline-block;
+  margin: auto;
+  padding: 5px 10px;
+  background-color: #FFFFFF;
+  color: var(--box-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.home_container_button:hover {
+  background-color: var(--hover-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: auto;
+  padding: 30px;
+  margin: 80px;
+  background-color: var(--main-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.question {
+  font-size:xx-large;
+  margin-bottom: 10px;
+}
+
+.opciones {
+  display: flex;
+  font-size: x-large;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 25px
+}
+
+.button {
+  font-family: 'VT323', monospace;
+  font-size: x-large;
+  display: inline-block;
+  height: 50px;
+  width: 90px;
+  margin-bottom: 60px;
+  padding: 5px 10px;
+  border-inline-color: var(--box-color);
+  color: var(--box-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+.styled {
+  font-family: 'VT323', monospace;
+  border: 0;
+  line-height: 2.5;
+  width: max-content;
+  padding: 0 20px;
+  font-size: large;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: #a1cef4;
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/sports/spo-5/spo403.cur), auto !important;} /* End https://www.cursors-4u.com */
