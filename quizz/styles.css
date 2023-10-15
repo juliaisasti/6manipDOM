@@ -12,18 +12,24 @@
   scroll-behavior: smooth;
 }
 
+header{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items:center;
+}
+
   #nav-wrapper {
-    overflow: hidden;
+    overflow:visible;
     top:0;
     position: fixed;
-    font-size:medium;
+    font-size:smaller;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 800px;
     height: 40px;
-
     background-color: var(--main-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -33,6 +39,7 @@
     font-family: 'VT323', monospace;
     background: var(--body-color);
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -42,6 +49,15 @@ main {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+}
+
+a{
+  padding: 10px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000; 
 }
 
 .home_container{
@@ -83,15 +99,18 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  width: auto;
+  
   padding: 30px;
   margin: 80px;
   background-color: var(--main-color);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  box-shadow: 8px 6px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 8px 6px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 6px 5px 0px rgba(0,0,0,0.75);
 }
 
 .question {
+  text-align: center;
   font-size:xx-large;
   margin-bottom: 10px;
 }
@@ -157,5 +176,16 @@ main {
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
+@media screen and (max-width: 768px) {
+.opciones {
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+  font-size: 20px;
+}
+}
+
+@media screen and (max-width: 1280px) {
+}
 
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/sports/spo-5/spo403.cur), auto !important;} /* End https://www.cursors-4u.com */
