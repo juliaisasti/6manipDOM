@@ -23,9 +23,10 @@ document.getElementById("quiz").addEventListener("submit", function(event){
             console.log(userAnswers[i], correctAnswers[i]);
             if(userAnswers[i]==correctAnswers[i]){
                 console.log("Correcto")
+                counter++
             } else {
                 console.log("Incorrecto")
             }
         }
-
+        alert(`Tu puntaje es de ${counter} sobre 10`)
 })
