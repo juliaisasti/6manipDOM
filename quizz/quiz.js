@@ -8,19 +8,25 @@ document.getElementById("quiz").addEventListener("submit", function(event){
 
     const allAnswers = document.querySelectorAll("input")
 
-    let userAnswers = [""]
+    let userAnswers = []
 
     console.log(allAnswers)
 
-    for (let i = 0; i < allAnswers.length -1; i++) {
+    for (let i = 0; i < allAnswers.length - 1; i++) {
         if (allAnswers[i].checked){
+
             userAnswers.push(allAnswers[i].value)
         }
     }
 
         for (let i = 0; i < userAnswers.length; i++) {
+            console.log(userAnswers[i], correctAnswers[i]);
             if(userAnswers[i]==correctAnswers[i]){
-                return console.log("Correcto")
-            } 
+                console.log("Correcto")
+                counter++
+            } else {
+                console.log("Incorrecto")
+            }
         }
+        alert(`Tu puntaje es de ${counter} sobre 10`)
 })
